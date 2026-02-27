@@ -154,14 +154,11 @@
       overflow: hidden;
     }
     .hero-bg{
-      position:absolute;
-      inset: -200px -80px auto -80px;
-      height: 520px;
-      background:
-        radial-gradient(closest-side, rgba(18,185,129,.10), transparent 70%),
-        radial-gradient(closest-side, rgba(109,56,214,.10), transparent 70%);
-      filter: blur(0px);
-      pointer-events:none;
+        position: relative;
+        min-height: 100vh;              /* ocupa a altura inteira da tela */
+        display: flex;
+        align-items: center;            /* centraliza conteúdo verticalmente */
+        background: url("bgHero.png") center / cover no-repeat;
     }
     .hero-grid{
       position: relative;
@@ -661,7 +658,7 @@
 
   <!-- HERO -->
   <main id="inicio" class="hero">
-    <div class="hero-bg" aria-hidden="true"> <img src="bgHero.png" alt="Hero"> </div>
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-grid">
         <div>

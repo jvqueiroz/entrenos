@@ -149,7 +149,7 @@
       align-items: center;
     }
     .hero h1{
-      font-size: clamp(30px, 3.2vw, 44px);
+      font-size: clamp(48px, 3.2vw, 44px);
       line-height: 1.06;
       letter-spacing: -0.03em;
       margin: 0 0 12px;
@@ -186,7 +186,7 @@
     /* ====== SECTION BASE ====== */
     section{ padding: 44px 0; }
     .section-title{
-      font-size: 22px;
+      font-size: 30px;
       letter-spacing: -0.02em;
       margin: 0 0 18px;
     }
@@ -245,10 +245,11 @@
       grid-template-columns: 1.1fr .9fr;
       gap: 28px;
       align-items: center;
+
     }
     .band h2{
       margin: 0 0 10px;
-      font-size: 24px;
+      font-size: 30px;
       letter-spacing: -0.02em;
     }
     .band p{
@@ -305,7 +306,7 @@
     
     .copy h3{
       margin: 0 0 10px;
-      font-size: 24px;
+      font-size: 30px;
       letter-spacing: -0.02em;
     }
     .copy p{
@@ -406,7 +407,7 @@
     }
     .cta-inner h3{
       margin: 0 0 10px;
-      font-size: 30px;
+      font-size: 48px;
       line-height: 1.05;
       letter-spacing: -0.03em;
     }
@@ -516,6 +517,49 @@
     display: block;
     }
 
+    /* ====== Botão Flutuante ====== */
+
+  .whatsapp-float{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  z-index: 9999;
+  transition: transform .2s ease;
+}
+
+.whatsapp-float:hover{
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.whatsapp-tooltip{
+  position: absolute;
+  right: 75px;
+  background: white;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-tooltip.show{
+  opacity: 1;
+  transform: translateY(0);
+}
     /* ====== RESPONSIVE ====== */
     @media (max-width: 980px){
       .hero-grid,
@@ -534,9 +578,73 @@
       .burger{ display:inline-flex; }
       .grid-6{ grid-template-columns: 1fr; }
       .nav-right .pill{ display:none; }
+
+      .whatsapp-float{
+        bottom: calc(20px + env(safe-area-inset-bottom));
+        right: 16px;
+        width: 56px;
+       height: 56px;
+      }
+
+      .whatsapp-tooltip{
+        right: 68px;
+        font-size: 13px;
+        padding: 8px 12px;
+        display: none;
+      }
+      
+      .hero h1{
+        font-size: 30px;
+      }
+
+      .section-title{
+      font-size: 24px;
+    }
+      .band h2{
+        font-size: 24px;
+      }
+      .copy h3{
+        font-size: 24px;
+      }
+      .cta-inner h3{
+        font-size: 30px;
+      }
     }
   </style>
 </head>
+
+
+<!-- Botão flutuante WhatsApp -->
+<a href="https://wa.me/5588998367528"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer">
+
+  <!-- Ícone oficial SVG WhatsApp -->
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="white">
+    <path d="M19.11 17.57c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.08 4.48.7.3 1.25.47 1.67.6.7.22 1.33.2 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    <path d="M16.01 2.67c-7.36 0-13.34 5.98-13.34 13.34 0 2.35.61 4.64 1.78 6.65L2 30l7.54-2.4c1.94 1.06 4.14 1.62 6.47 1.62h.01c7.36 0 13.34-5.98 13.34-13.34 0-3.57-1.39-6.93-3.93-9.46-2.53-2.53-5.89-3.92-9.45-3.92zm0 24.3h-.01c-2.02 0-3.99-.54-5.71-1.55l-.41-.24-4.48 1.42 1.46-4.36-.27-.45c-1.16-1.85-1.77-4-1.77-6.23 0-6.54 5.32-11.86 11.87-11.86 3.17 0 6.14 1.23 8.39 3.48 2.24 2.24 3.48 5.22 3.48 8.38 0 6.55-5.32 11.87-11.86 11.87z"/>
+  </svg>
+
+  <span class="whatsapp-tooltip" id="waTooltip">
+    Fale com nosso suporte 👋
+  </span>
+
+</a>
+
+<script>
+  window.addEventListener("load", function() {
+    const tooltip = document.getElementById("waTooltip");
+
+    setTimeout(() => {
+      tooltip.classList.add("show");
+    }, 800);
+
+    setTimeout(() => {
+      tooltip.classList.remove("show");
+    }, 5800);
+  });
+</script>
 
 <body>
 

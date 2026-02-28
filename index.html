@@ -281,9 +281,7 @@
       align-items:flex-start;
       padding: 14px 14px;
       border-radius: 14px;
-      background: rgba(255,255,255,.55);
-      border: 1px solid rgba(255,255,255,.6);
-      box-shadow: 0 8px 18px rgba(2,6,23,.06);
+      background: #E1F5F1;
     }
     .badge{
       font-size: 12px;
@@ -313,27 +311,10 @@
     .photo{
       border-radius: 26px;
       overflow: hidden;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(229,231,235,.9);
       min-height: 320px;
-      background:
-        radial-gradient(circle at 30% 30%, rgba(18,185,129,.18), transparent 55%),
-        radial-gradient(circle at 70% 65%, rgba(109,56,214,.16), transparent 55%),
-        linear-gradient(0deg, #e2e8f0, #f8fafc);
       position: relative;
     }
-    .photo:after{
-      content:"Substitua por uma imagem real";
-      position:absolute;
-      left: 16px;
-      bottom: 16px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.75);
-      border: 1px solid rgba(229,231,235,.85);
-      font-size: 12px;
-      color: rgba(15,23,42,.65);
-    }
+    
     .copy h3{
       margin: 0 0 10px;
       font-size: 24px;
@@ -729,7 +710,7 @@
       <div class="band-inner">
         <div>
           <h2 style="color: #ffffff;">A EntreNós conecta você a psicólogos preparados para acolher sua realidade.</h2>
-          <p>Um espaço seguro e leve, do jeito que você precisa: com apoio, direção e respeito ao seu momento.</p>
+          <p style="color: #ffffff;">Um espaço seguro e leve, do jeito que você precisa: com apoio, direção e respeito ao seu momento.</p>
 
           <div class="steps">
             <div class="step">
@@ -756,7 +737,7 @@
           </div>
 
           <div style="margin-top:14px;">
-            <a class="btn btn-primary" href="#começar">Quero começar meu acompanhamento</a>
+            <a class="btn btn-primary" style="background-color: #764BB7;" href="#começar">Quero começar meu acompanhamento</a>
           </div>
         </div>
 
@@ -771,7 +752,9 @@
   <section>
     <div class="container">
       <div class="two-col">
-        <div class="photo" aria-label="Foto"></div>
+        <div class="photo" aria-label="Foto">
+          <img src="imgPhoto.png" alt="Hero" style="width:100%;height:100%;object-fit:cover;">
+        </div>
 
         <div class="copy">
           <h3>Cuidado emocional que cabe na sua realidade.</h3>

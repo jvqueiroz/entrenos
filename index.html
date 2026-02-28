@@ -26,7 +26,7 @@
     }
 
     *{ box-sizing: border-box; }
-    html,body{ height: 100%; overflow-x: hidden;}
+    html,body{ height: 100%; overflow-x: hidden; scroll-behavior: smooth;}
     body{
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
@@ -66,20 +66,7 @@
       font-weight: 800;
       letter-spacing: -0.02em;
     }
-    .brand-mark{
-      width: 26px; height: 26px;
-      border-radius: 10px;
-      border: 2px solid rgba(18,185,129,.35);
-      position: relative;
-    }
-    .brand-mark:before, .brand-mark:after{
-      content:"";
-      position:absolute;
-      inset: 6px;
-      border-radius: 999px;
-      border: 2px solid rgba(109,56,214,.35);
-      transform: rotate(30deg);
-    }
+
     .nav-links{
       display: flex;
       align-items: center;
@@ -524,7 +511,7 @@
       background: #fff;
     }
     img {
-     max-width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     }
@@ -570,7 +557,7 @@
 
         <div class="nav-right">
           <a class="pill" href="#soupsico">sou psicólogo</a>
-          <a class="btn btn-primary" href="#começar">Começar</a>
+          <a class="btn btn-primary" href="https://entrenos-jr.lovable.app/">Começar</a>
           <button class="burger" type="button" aria-label="Abrir menu">☰</button>
         </div>
       </div>
@@ -589,7 +576,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#começar">Quero começar meu acompanhamento</a>
+            <a href="https://entrenos-jr.lovable.app/" class="btn btn-primary">Quero começar meu acompanhamento</a>
             <a class="btn btn-ghost" href="#como">Entender como funciona</a>
           </div>
         </div>
@@ -723,7 +710,7 @@
           </div>
 
           <div style="margin-top:14px;">
-            <a class="btn btn-primary" style="background-color: #764BB7;" href="#começar">Quero começar meu acompanhamento</a>
+            <a class="btn btn-primary" style="background-color: #764BB7;" href="https://entrenos-jr.lovable.app/">Quero começar meu acompanhamento</a>
           </div>
         </div>
 
@@ -751,7 +738,7 @@
           <p>Porque cuidar da mente não deveria ser um luxo.</p>
 
           <div class="hero-actions" id="começar">
-            <a class="btn btn-primary" href="#planos">Quero começar meu acompanhamento</a>
+            <a class="btn btn-primary" href="https://entrenos-jr.lovable.app/">Quero começar meu acompanhamento</a>
             <a class="btn btn-ghost" href="#como">Entender como funciona</a>
           </div>
         </div>
@@ -807,7 +794,7 @@
           <p>
             A EntreNós existe para ser esse espaço seguro — onde você pode falar, respirar e reorganizar o que está dentro.
           </p>
-          <a class="btn btn-primary" href="#começar">Quero começar meu acompanhamento</a>
+          <a class="btn btn-primary" href="https://entrenos-jr.lovable.app/">Quero começar meu acompanhamento</a>
         </div>
 
         <div class="cta-illus" aria-label="Ilustração roxa">
@@ -911,10 +898,10 @@
     <div class="container">
       <div class="footer-inner">
         <div style="display:flex;align-items:center;gap:10px;">
-          <span class="brand-mark" aria-hidden="true"></span>
+          
           <div>
-            <div style="font-weight:900;color:#0f172a;">entre(nós)</div>
-            <div style="font-size:12px;color:rgba(15,23,42,.6);">Apoio emocional acessível para quem estuda.</div>
+            <div> <img src="imgLogo.png" alt="EntreNós" style="height:32px;"></div>
+            <div style="font-size:12px;color:rgba(15,23,42,.6); padding-top: 16px;;">Apoio emocional acessível para quem estuda.</div>
           </div>
         </div>
 

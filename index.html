@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>entreNós — Psicologia Online</title>
@@ -223,8 +224,8 @@
       background: rgba(18,185,129,.10);
       border: 1px solid rgba(18,185,129,.18);
       flex: 0 0 auto;
+      color: #4DAC85;
     }
-    .mini-ico svg{ width: 18px; height: 18px; opacity: .9; }
     .mini-card h4{
       margin: 0 0 6px;
       font-size: 13px;
@@ -609,6 +610,9 @@
       .cta-inner h3{
         font-size: 30px;
       }
+      .btn{
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -660,7 +664,7 @@
           <a href="#inicio">Início</a>
           <a href="#especialidades">Especialidades</a>
           <a href="#como">Como funciona</a>
-          <a href="#planos">Planos</a>
+          <a href="#planos">Valores</a>
         </nav>
 
         <div class="nav-right">
@@ -705,9 +709,7 @@
         <!-- card -->
         <div class="mini-card">
           <div class="mini-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 21s-7-4.6-9.5-9.2C.7 8.2 2.5 5 6 5c2 0 3.3 1.2 4 2.3C10.7 6.2 12 5 14 5c3.5 0 5.3 3.2 3.5 6.8C19 16.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.8"/>
-            </svg>
+            <span class="material-symbols-outlined">sentiment_stressed</span>
           </div>
           <div>
             <h4>Ansiedade antes de provas</h4>
@@ -717,11 +719,7 @@
 
         <div class="mini-card">
           <div class="mini-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M4 19V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v11" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M8 6V4m8 2V4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M6 19h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
+            <span class="material-symbols-outlined">event_note</span>
           </div>
           <div>
             <h4>Rotina pesada</h4>
@@ -731,10 +729,7 @@
 
         <div class="mini-card">
           <div class="mini-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 3v18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
+            <span class="material-symbols-outlined">center_focus_strong</span>
           </div>
           <div>
             <h4>Dificuldade de foco</h4>
@@ -744,10 +739,8 @@
 
         <div class="mini-card">
           <div class="mini-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M7 7l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M17 7L7 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
+               <span class="material-symbols-outlined">rule</span>
+
           </div>
           <div>
             <h4>Autocobrança</h4>
@@ -757,11 +750,7 @@
 
         <div class="mini-card">
           <div class="mini-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 21c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8Z" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M8.5 10.5h.01M15.5 10.5h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-              <path d="M9 16c1.2-1 2.4-1.5 3-1.5S13.8 15 15 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
+            <span class="material-symbols-outlined">sentiment_dissatisfied</span>
           </div>
           <div>
             <h4>Desânimo</h4>
@@ -771,10 +760,7 @@
 
         <div class="mini-card">
           <div class="mini-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7Z" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M12 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" stroke="currentColor" stroke-width="1.8"/>
-            </svg>
+            <span class="material-symbols-outlined">groups</span>
           </div>
           <div>
             <h4>Pressão familiar/social</h4>
@@ -866,28 +852,28 @@
 
       <div class="pricing-grid">
         <div class="plan">
-          <h4>Básico</h4>
+          <h4>1 sessão</h4>
           <p>Para quem quer começar a cuidar da saúde emocional.</p>
           <div class="price">R$ 80 <small>/mês</small></div>
-          <p>1 sessão/mês</p>
-          <a class="btn btn-primary cta" href="#">Escolher básico</a>
+          <p> O valor só será cobrado após o contato do profissional</p>
+          <a class="btn btn-primary cta" href="https://entrenos-jr.lovable.app/">Quero começar</a>
         </div>
 
         <div class="plan">
-          <h4>Essencial</h4>
+          <h4>2 sessões</h4>
           <p>Para quem quer suporte e consistência.</p>
           <div class="price">R$ 120 <small>/mês</small></div>
-          <p>2 sessões/mês</p>
-          <a class="btn btn-primary cta" href="#">Escolher essencial</a>
+          <p>O valor só será cobrado após o contato do profissional</p>
+          <a class="btn btn-primary cta" href="https://entrenos-jr.lovable.app/">Quero começar</a>
         </div>
 
         <div class="plan featured">
           <span class="tag">Mais escolhido</span>
-          <h4>Intensivo</h4>
+          <h4>4 sessão</h4>
           <p>Para quem precisa de acompanhamento mais próximo.</p>
           <div class="price">R$ 200 <small>/mês</small></div>
-          <p>4 sessões/mês</p>
-          <a class="btn btn-primary cta" href="#">Escolher intensivo</a>
+          <p>O valor só será cobrado após o contato do profissional</p>
+          <a class="btn btn-primary cta" href="https://entrenos-jr.lovable.app/">Quero começar</a>
         </div>
       </div>
     </div>
@@ -921,7 +907,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>Isso substitui terapia tradicional?</span>
-            <span class="chev">⌄</span>
+            <span class="chev"> 
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Não. É um acompanhamento psicológico online, com profissionais habilitados. O formato pode variar conforme sua necessidade.
@@ -931,7 +921,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>Quanto tempo até eu começar?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Normalmente em poucos dias. Você responde as perguntas iniciais e nós fazemos o match com um psicólogo disponível.
@@ -941,7 +935,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>As sessões são por onde?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Online, por videochamada (ex.: Google Meet/Zoom). Você recebe as orientações no seu e-mail/WhatsApp, se quiser.
@@ -951,7 +949,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>E se eu não me adaptar ao psicólogo?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Você pode solicitar rematch. A ideia é você se sentir confortável e acolhido no processo.
@@ -961,7 +963,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>É realmente acessível?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Sim — os planos foram pensados para caber na rotina e orçamento de estudantes e concurseiros.
@@ -971,7 +977,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>Posso cancelar quando quiser?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Pode. Você consegue gerenciar e cancelar sua assinatura conforme as regras do plano.
@@ -981,7 +991,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>Como funciona a assinatura?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Você escolhe um plano mensal, agenda suas sessões e acompanha o suporte conforme a quantidade incluída.
@@ -991,7 +1005,11 @@
         <div class="faq-item" aria-expanded="false">
           <button class="faq-q" type="button">
             <span>Meus dados ficam seguros?</span>
-            <span class="chev">⌄</span>
+            <span class="chev">
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </span>
           </button>
           <div class="faq-a">
             Sim. Use políticas claras de privacidade e boas práticas (LGPD), além de plataformas seguras para chamadas.
